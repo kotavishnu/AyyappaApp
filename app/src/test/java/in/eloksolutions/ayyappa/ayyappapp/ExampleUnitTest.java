@@ -1,4 +1,4 @@
-package in.eloksolutions.ayyappa.ayyappapp;
+package in.vishnu.ayyappa.ayyappapp;
 
 import org.junit.Test;
 
