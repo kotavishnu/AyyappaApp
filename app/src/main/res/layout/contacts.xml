@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/ColorActionBar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite Friends"
+            android:textSize="20dp"
+            android:id="@+id/text"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/send"
+            android:text="SEND"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/text" />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:id="@+id/remove"
+                android:layout_marginRight="2dp"
+                android:text="remove"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:background="@color/ColorActionBar"/>
+            <Button
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:id="@+id/addcontact"
+                android:layout_toRightOf="@+id/remove"
+                android:text="add"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:background="@color/ColorActionBar"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/button"/>
+
+    </RelativeLayout>
+</LinearLayout>

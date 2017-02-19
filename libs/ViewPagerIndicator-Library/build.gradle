@@ -1,0 +1,36 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath "com.android.tools.build:gradle:1.0.0"
+  }
+}
+
+apply plugin: "com.android.library"
+
+repositories {
+  mavenCentral()
+}
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.0"
+
+  android {
+    sourceSets {
+      main {
+        manifest.srcFile "AndroidManifest.xml"
+        java.srcDirs = [ "src" ]
+
+        res.srcDirs = [ "res" ]
+      }
+    }
+  }
+
+}
+
+dependencies {
+  compile 'com.android.support:appcompat-v7:25.0.1'
+}

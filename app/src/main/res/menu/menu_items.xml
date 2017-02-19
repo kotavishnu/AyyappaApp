@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_feedback"
+        android:title="Feedback"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_feedback"
+        />
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:showAsAction="always"
+       android:icon="@drawable/ic_home"
+       >
+    </item>
+
+</menu>
