@@ -15,7 +15,7 @@
   android:orientation="vertical" >
 
         <fragment
-        android:name="in.eloksolutions.ayyappa.ayyappapp.fragments.CarousalFragment"
+        android:name="in.vishnu.ayyappa.ayyappapp.fragments.CarousalFragment"
         android:id="@+id/fragment_place"
         android:layout_width="match_parent"
 
